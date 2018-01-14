@@ -4,10 +4,10 @@ var bio = {
     contacts: {
         moblie: "(415)5331247",
         email: "erictthk@gmail.com",
-        github: "https://github.com/Eric0605",
-        twitter: "https://twitter.com/Erictsang9?lang=en",
+        GitHub: "https://github.com/Eric0605",
+        Twitter: "https://twitter.com/Erictsang9?lang=en",
         location: "usa",
-        Linkin: "https://www.linkedin.com/in/erictthk/"
+        LinkedIn: "https://www.linkedin.com/in/erictthk/"
     },
     welcomeMessage: "Hi",
     skills: ["teaching ", "programming "],
@@ -188,7 +188,7 @@ var education = {
         },
         {
             title: "Web Design for Everybody (Basics of Web Development and Coding)",
-            school: "coursera (University of Michigan)",
+            school: "Coursera (University of Michigan)",
             dates: "2017-2017",
             url: "https://www.coursera.org/"
         }
