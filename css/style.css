@@ -197,7 +197,9 @@ span {
 #lets-connect {
   text-align: center;
 }
-
+#role{
+  color: orange;
+}
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
