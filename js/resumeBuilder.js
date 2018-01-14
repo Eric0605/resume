@@ -99,8 +99,6 @@ var education = {
             var formattedschoolLink = HTMLschoolName.replace("%link%", education.schools[x].url);
             var formattedschoolName = formattedschoolLink.replace("%data%", education.schools[x].name);
             $(".education-entry:last").append(formattedschoolName);
-            var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[x].degree);
-            $(".education-entry:last").append(formattedschoolDegree);
             var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[x].dates);
             $(".education-entry:last").append(formattedschoolDates);
             var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
