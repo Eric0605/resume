@@ -62,15 +62,14 @@ var bio = {
 bio.display();
 var education = {
     schools: [{
-            name: "Mira Loma",
+            name: "Mira Loma High School",
             location: "Sacarmento",
-            degree: "High school",
             majors: [],
             dates: "2016-2019",
             url: "http://www.sanjuan.edu/miraloma"
         },
         {
-            name: "Kwun Tong Maryknoll College",
+            name: "Kwun Tong Maryknoll College (High school)",
             location: "Hong Kong",
             degree: "High school",
             majors: [],
