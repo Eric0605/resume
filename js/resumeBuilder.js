@@ -2,7 +2,7 @@ var bio = {
     name: "Eric Tsang",
     role: "student",
     contacts: {
-        moblie: "(415)5331247",
+        moblie: "(415)533-1247",
         email: "erictthk@gmail.com",
         GitHub: "https://github.com/Eric0605",
         Twitter: "https://twitter.com/Erictsang9?lang=en",
@@ -26,18 +26,18 @@ var bio = {
         $("#header").append(formattedemail2);
         $("#lets-connect").append(formattedemail2);
         formattedgithub = HTMLgithub.replace("%contact%", bio.contacts);
-        formattedgithub2 = formattedgithub.replace("%data%", bio.contacts.github);
-        formattedgithub3 = formattedgithub2.replace("%link%", bio.contacts.github);
+        formattedgithub2 = formattedgithub.replace("%data%", bio.contacts.GitHub);
+        formattedgithub3 = formattedgithub2.replace("%link%", bio.contacts.GitHub);
         $("#header").append(formattedgithub3);
         $("#lets-connect").append(formattedgithub3);
         formattedtwitter = HTMLtwitter.replace("%contact%", bio.contacts);
-        formattedtwitter2 = formattedtwitter.replace("%data%", bio.contacts.twitter);
-        formattedtwitter3 = formattedtwitter2.replace("%link%", bio.contacts.twitter);
+        formattedtwitter2 = formattedtwitter.replace("%data%", bio.contacts.Twitter);
+        formattedtwitter3 = formattedtwitter2.replace("%link%", bio.contacts.Twitter);
         $("#header").append(formattedtwitter3);
         $("#lets-connect").append(formattedtwitter3);
         formattedLinkin = HTMLlinkin.replace("%contact%", bio.contacts);
-        formattedLinkin2 = formattedLinkin.replace("%data%", bio.contacts.Linkin);
-        formattedLinkin3 = formattedLinkin2.replace("%link%", bio.contacts.Linkin);
+        formattedLinkin2 = formattedLinkin.replace("%data%", bio.contacts.LinkedIn);
+        formattedLinkin3 = formattedLinkin2.replace("%link%", bio.contacts.LinkedIn);
         $("#header").append(formattedLinkin3);
         $("#lets-connect").append(formattedLinkin3);
         formattedlocation = HTMLlocation.replace("%contact%", bio.contacts);
