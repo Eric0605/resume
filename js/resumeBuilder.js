@@ -60,6 +60,70 @@ var bio = {
     }
 };
 bio.display();
+var education = {
+    schools: [{
+            name: "Mira Loma",
+            location: "Sacarmento",
+            degree: "High school",
+            majors: [],
+            dates: "2016-2019",
+            url: "http://www.sanjuan.edu/miraloma"
+        },
+        {
+            name: "Kwun Tong Maryknoll College",
+            location: "Hong Kong",
+            degree: "High school",
+            majors: [],
+            dates: "2013-2016",
+            url: "http://www.ktmc.edu.hk/"
+        }
+    ],
+    onlineCourses: [{
+            title: "Front-End Web Developer Nanodegree Program",
+            school: "Udacity",
+            dates: "2017-2017",
+            url: "http://udacity.com",
+            img: "images/degree.PNG",
+        },
+        {
+            title: "Web Design for Everybody (Basics of Web Development and Coding)",
+            school: "Coursera (University of Michigan)",
+            dates: "2017-2017",
+            url: "https://www.coursera.org/"
+        }
+    ],
+    display: function() {
+        for (var x = 0; x < education.schools.length; x++) {
+            $(".education-entry:last").css("color", "blue");
+            $("#education").append(HTMLschoolStart);
+            var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[x].name);
+            $(".education-entry:last").append(formattedschoolName);
+            var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[x].degree);
+            $(".education-entry:last").append(formattedschoolDegree);
+            var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[x].dates);
+            $(".education-entry:last").append(formattedschoolDates);
+            var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
+            $(".education-entry:last").append(formattedschoolLocation);
+        }
+        $(".education-entry:last").append(HTMLonlineClasses);
+        for (var y = 0; y < education.onlineCourses.length; y++) {
+            $(".education-entry:last").css("color", "blue");
+            var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[y].title);
+            $(".education-entry:last").append(formattedonlineTitle);
+            var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[y].school);
+            $(".education-entry:last").append(formattedonlineSchool);
+            var formattedonlineDates = HTMLschoolDates.replace("%data%", education.onlineCourses[y].dates);
+            $(".education-entry:last").append(formattedonlineDates);
+            var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[y].url);
+            $(".education-entry:last").append(formattedonlineURL);
+            if (education.onlineCourses[y].img !== undefined) {
+              var formattedonlineimg = HTMLonlinePic.replace("%data%", education.onlineCourses[y].img);
+              $(".education-entry:last").append(formattedonlineimg);
+            };
+        }
+    }
+};
+education.display();
 var work = {
     jobs: [{
             "employer": "volunteer",
@@ -161,67 +225,4 @@ var projects = {
     }
 };
 projects.display();
-var education = {
-    schools: [{
-            name: "Mira Loma",
-            location: "Sacarmento",
-            degree: "High school",
-            majors: [],
-            dates: "2016-2019",
-            url: "http://www.sanjuan.edu/miraloma"
-        },
-        {
-            name: "Kwun Tong Maryknoll College",
-            location: "Hong Kong",
-            degree: "High school",
-            majors: [],
-            dates: "2013-2016",
-            url: "http://www.ktmc.edu.hk/"
-        }
-    ],
-    onlineCourses: [{
-            title: "Front-End Web Developer Nanodegree Program",
-            school: "Udacity",
-            dates: "2017-2017",
-            url: "http://udacity.com",
-            img: "images/degree.PNG",
-        },
-        {
-            title: "Web Design for Everybody (Basics of Web Development and Coding)",
-            school: "Coursera (University of Michigan)",
-            dates: "2017-2017",
-            url: "https://www.coursera.org/"
-        }
-    ],
-    display: function() {
-        for (var x = 0; x < education.schools.length; x++) {
-            $(".education-entry:last").css("color", "blue");
-            $("#education").append(HTMLschoolStart);
-            var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[x].name);
-            $(".education-entry:last").append(formattedschoolName);
-            var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[x].degree);
-            $(".education-entry:last").append(formattedschoolDegree);
-            var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[x].dates);
-            $(".education-entry:last").append(formattedschoolDates);
-            var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
-            $(".education-entry:last").append(formattedschoolLocation);
-        }
-        $(".education-entry:last").append(HTMLonlineClasses);
-        for (var y = 0; y < education.onlineCourses.length; y++) {
-            $(".education-entry:last").css("color", "blue");
-            var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[y].title);
-            $(".education-entry:last").append(formattedonlineTitle);
-            var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[y].school);
-            $(".education-entry:last").append(formattedonlineSchool);
-            var formattedonlineDates = HTMLschoolDates.replace("%data%", education.onlineCourses[y].dates);
-            $(".education-entry:last").append(formattedonlineDates);
-            var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[y].url);
-            $(".education-entry:last").append(formattedonlineURL);
-            if (education.onlineCourses[y].img !== undefined) {
-              var formattedonlineimg = HTMLonlinePic.replace("%data%", education.onlineCourses[y].img);
-              $(".education-entry:last").append(formattedonlineimg);
-            };
-        }
-    }
-};
-education.display();
+
