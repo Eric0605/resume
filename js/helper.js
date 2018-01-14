@@ -80,7 +80,7 @@ function logClicks(x,y) {
 $(document).click(function(loc) {
 });
 var map;
-function initializeMap() {
+function initMap() {
 
   var locations;
 
@@ -136,7 +136,7 @@ function initializeMap() {
   locations = locationFinder();
   pinPoster(locations);
 }
-window.addEventListener('load', initializeMap);
+window.addEventListener('load', initMap);
 window.addEventListener('resize', function(e) {
 map.fitBounds(mapBounds);
 });
