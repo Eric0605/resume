@@ -131,8 +131,6 @@ function initMap() {
         mapTypeControl: false
     });
     var largeInfowindow = new google.maps.InfoWindow();
-    var defaultIcon = makeMarkerIcon('0091ff');
-    var highlightedIcon = makeMarkerIcon('FFFF24');
     for (var i = 0; i < locations.length; i++) {
         var position = locations[i].location;
         var title = locations[i].title;
@@ -152,24 +150,6 @@ function initMap() {
             url : results
         });
         markers.push(marker);
-        marker.addListener('click', function() {
-            populateInfoWindow(this, largeInfowindow);
-            if (this.getAnimation() !== null) {
-                this.setAnimation(null);
-            } else {
-                this.setAnimation(google.maps.Animation.BOUNCE);
-                var Marker = this;
-                window.setTimeout(function() {
-                  Marker.setAnimation(null)
-                },700);
-            }
-        });
-        marker.addListener('mouseover', function() {
-            this.setIcon(highlightedIcon);
-        });
-        marker.addListener('mouseout', function() {
-            this.setIcon(defaultIcon);
-        });
         var bounds = new google.maps.LatLngBounds();
         for (var i = 0; i < markers.length-1; i++) {
             markers[i].setMap(map);
