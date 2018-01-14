@@ -205,10 +205,6 @@ var education = {
             $(".education-entry:last").append(formattedschoolDates);
             var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
             $(".education-entry:last").append(formattedschoolLocation);
-            var formattedschoolMajors = HTMLschoolMajor.replace("%data%", education.schools[x].majors);
-            if(formattedschoolMajors !== []){
-            $(".education-entry:last").append(formattedschoolMajors);
-            };
         }
         $(".education-entry:last").append(HTMLonlineClasses);
         for (var y = 0; y < education.onlineCourses.length; y++) {
