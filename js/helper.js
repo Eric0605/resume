@@ -136,7 +136,7 @@ function initializeMap() {
   locations = locationFinder();
   pinPoster(locations);
 }
-window.addEventListener('load', initializeMap());
+window.addEventListener('load', initializeMap);
 window.addEventListener('resize', function(e) {
 map.fitBounds(mapBounds);
 });
