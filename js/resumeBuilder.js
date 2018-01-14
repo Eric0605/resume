@@ -96,7 +96,8 @@ var education = {
         for (var x = 0; x < education.schools.length; x++) {
             $(".education-entry:last").css("color", "blue");
             $("#education").append(HTMLschoolStart);
-            var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[x].name);
+            var formattedschoolLink = HTMLschoolName.replace("%link%", education.schools[x].url);
+            var formattedschoolName = formattedschoolLink.replace("%data%", education.schools[x].name);
             $(".education-entry:last").append(formattedschoolName);
             var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[x].degree);
             $(".education-entry:last").append(formattedschoolDegree);
