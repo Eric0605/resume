@@ -91,6 +91,7 @@ h5 {
   color: #999;
   line-height: 16px;
   float: left;
+  margin-right: 10px;
 }
 
 .location-text {
@@ -98,7 +99,7 @@ h5 {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  float: right;
+  float: left;
 
 }
 
