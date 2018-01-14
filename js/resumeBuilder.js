@@ -166,15 +166,15 @@ var education = {
             name: "Mira Loma",
             location: "Sacarmento",
             degree: "High school",
-            majors: ["none", "none"],
+            majors: [],
             dates: "2016-2019",
             url: "http://www.sanjuan.edu/miraloma"
         },
         {
-            name: "KTMC",
+            name: "Kwun Tong Maryknoll College",
             location: "Hong Kong",
             degree: "High school",
-            majors: ["none", "none"],
+            majors: [],
             dates: "2016-2019",
             url: "http://www.ktmc.edu.hk/"
         }
@@ -206,7 +206,9 @@ var education = {
             var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
             $(".education-entry:last").append(formattedschoolLocation);
             var formattedschoolMajors = HTMLschoolMajor.replace("%data%", education.schools[x].majors);
+            if(formattedschoolMajors !== []){
             $(".education-entry:last").append(formattedschoolMajors);
+            };
         }
         $(".education-entry:last").append(HTMLonlineClasses);
         for (var y = 0; y < education.onlineCourses.length; y++) {
