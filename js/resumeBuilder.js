@@ -175,7 +175,7 @@ var education = {
             location: "Hong Kong",
             degree: "High school",
             majors: [],
-            dates: "2016-2019",
+            dates: "2013-2016",
             url: "http://www.ktmc.edu.hk/"
         }
     ],
