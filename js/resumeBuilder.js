@@ -103,43 +103,43 @@ var projects = {
             "title": "Memo",
             "dates": "2017",
             "description": "using canvas to create memo",
-            "images": ["images/memo1.jpg", "images/memo2.png"]
+            "images": ["images/memo1.jpg", "images/memo2.PNG"]
         },
         {
             "title": "Animal Trading Cards Overview",
             "dates": "2017",
             "description": "Use what I have learned about CSS to convert a design prototype into a functional webpage",
-            "images": ["images/catclicker.png", "images/dogclicker.png"]
+            "images": ["images/catclicker.PNG", "images/dogclicker.PNG"]
         },
         {
             "title": "Profile",
             "dates": "2017",
             "description": "develop a responsive website that will display images, descriptions and links to each of the portfolio projects",
-            "images": ["images/profile1.png", "images/profile2.png", "images/profile3.png","images/profile4.png"]
+            "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"]
         },
         {
             "title": "online resume",
             "dates": "2017",
             "description": "build my resume by writing JavaScript that will combine my personal information with pre-written HTML and CSS templates to generate my resume.",
-            "images": ["images/resime.png", "images/resime2.png"]
+            "images": ["images/resime.PNG", "images/resime2.PNG"]
         },
         {
             "title": "classic arcade game clone",
             "dates": "2017",
             "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
-            "images": ["images/game1.png", "images/game2.png"]
+            "images": ["images/game1.PNG", "images/game2.PNG"]
         },
         {
             "title": "fast running",
             "dates": "2017",
             "description": "to rewrite so it run at 60fps",
-            "images": ["images/pizza1.png", "images/pizza2.png"]
+            "images": ["images/pizza1.PNG", "images/pizza2.PNG"]
         },
         {
             "title": "mapping",
             "dates": "2017",
             "description": "use google map to map the neighberhood",
-            "images": ["images/map1.png", "images/map2.png"]
+            "images": ["images/map1.PNG", "images/map2.PNG"]
         }
     ],
     display: function() {
@@ -184,7 +184,7 @@ var education = {
             school: "Udacity",
             dates: "2017-2017",
             url: "http://udacity.com",
-            img: "images/degree.png",
+            img: "images/degree.PNG",
         },
         {
             title: "Web Design for Everybody (Basics of Web Development and Coding)",
