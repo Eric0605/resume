@@ -103,7 +103,7 @@ var projects = {
             "title": "Memo",
             "dates": "2017",
             "description": "using canvas to create memo",
-            "images": ["images/memo1.png", "images/memo2.png"]
+            "images": ["images/memo1.jpg", "images/memo2.png"]
         },
         {
             "title": "Animal Trading Cards Overview",
