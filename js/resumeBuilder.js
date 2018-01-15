@@ -175,7 +175,7 @@ var projects = {
         {
             "title": "fast running",
             "dates": "2017",
-            "description": "to rewrite so it run at 60fps",
+            "description": "to rewrite so it runs at 60fps",
             "images": ["images/pizza1.PNG", "images/pizza2.PNG"],
             "links": "https://github.com/Eric0605/mobile-pizza" 
         },
