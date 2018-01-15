@@ -189,14 +189,14 @@ var projects = {
         {
             "title": "online resume",
             "dates": "2017",
-            "description": "build my resume by writing JavaScript that will combine my personal information with pre-written HTML and CSS templates to generate my resume.",
+            "description": "build my resume by writing JavaScript that combines my personal information with pre-written HTML and CSS templates to generate my resume",
             "images": ["images/resime.PNG", "images/resime2.PNG"],
             "links": "#" 
         },
         {
             "title": "Profile",
             "dates": "2017",
-            "description": "develop a responsive website that will display images, descriptions and links to each of the portfolio projects",
+            "description": "develop a responsive website that displays images, descriptions and links to each of the portfolio projects",
             "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"],
             "links": "https://github.com/Eric0605/profile"
         },
