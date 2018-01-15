@@ -2,6 +2,10 @@
   width: 50px;
   height: 50px;
 }
+.flex-logo{
+  display: inline-block;
+  float: right;
+}
 body{
   width: auto;
 }
