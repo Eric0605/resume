@@ -187,7 +187,7 @@ var projects = {
             "links": "https://github.com/Eric0605/Game" 
         },
         {
-            "title": "online resume",
+            "title": "Online Resume",
             "dates": "2017",
             "description": "build my resume by writing JavaScript that combines my personal information with pre-written HTML and CSS templates to generate my resume",
             "images": ["images/resime.PNG", "images/resime2.PNG"],
