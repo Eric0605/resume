@@ -215,7 +215,6 @@ var projects = {
     display: function() {
         for (var x = 0; x < projects.projects.length; x++) {
             $("#projects").append(HTMLprojectStart);
-            $(".project-entry:last").append(formattedTitle);
             if (projects.projects[x].links !== undefined){
                 var formattedUrl = HTMLprojectTitle.replace("%link%", projects.projects[x].links);
                 var formattedTitle = formattedUrl.replace("%data%", projects.projects[x].title);
