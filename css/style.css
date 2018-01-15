@@ -1,6 +1,7 @@
 .logo{
   width: 35px;
   height: 35px;
+  padding-bottom: 0;
 }
 #blue-text{
   color: rgb(0,191,255);
