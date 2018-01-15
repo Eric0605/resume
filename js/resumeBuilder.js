@@ -212,7 +212,7 @@ var projects = {
             "dates": "2017",
             "description": "using canvas to create memo",
             "images": ["images/memo1.jpg", "images/memo2.PNG"],
-            "links": "#" 
+            "links": "https://github.com/Eric0605/Memo" 
         }
     ],
     display: function() {
