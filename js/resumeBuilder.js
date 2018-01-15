@@ -127,22 +127,25 @@ var work = {
             "title": "helper (Hong Kong Red Cross Princess Alexandra School)",
             "location": "Hong Kong",
             "dates": "2015",
-            "description": "to help to teach some special needed student."
+            "description": "to help to teach some special needed student.",
+            "links": "http://www.pas.edu.hk/"
         },
         {
             "employer": "volunteer",
             "title": "food distributor (San Francisco Christian School)",
             "location": "San Francisco",
             "dates": "2016",
-            "description": "to be in the church to distribute and translate if needed."
+            "description": "to be in the church to distribute and translate if needed.",
+            "links": "http://www.sfchristianschool.org/"
         },
         {
-                "employer": "volunteer",
-                "title": "tutor (Mira Loma High School)",
-                "location": "Sacromento",
-                "dates": "2017",
-                "description": "to help the other student with math and technology if they need help."
-            }
+            "employer": "volunteer",
+            "title": "tutor (Mira Loma High School)",
+            "location": "Sacromento",
+            "dates": "2017",
+            "description": "to help the other student with math and technology if they need help.",
+            "links": "http://www.sanjuan.edu/miraloma"
+        }
     ],
     display: function() {
         for (var i = 0; i < work.jobs.length; i++) {
