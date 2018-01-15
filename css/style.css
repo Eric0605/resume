@@ -164,6 +164,10 @@ a {
   padding-bottom: 20px;
   clear: both;
 }
+.flex-skill{
+  margin:0px;
+  display: inline-block;
+}
 
 .dark-gray {
   background-color: #4a4a4a;
