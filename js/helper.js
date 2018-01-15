@@ -18,8 +18,8 @@ var HTMLheaderRole = '<span id="role">%data%</span><hr>';
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><a href="#"><span class="white-text">%data%</span></a></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><a href="#"><span class="white-text">%data%</span></a></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">Twitter</span><a href="%link%"><span class="white-text">%data%</span></a></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">GitHub</span><a href="%link%"><img id="github" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></img></a></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="orange-text">Twitter</span><a href="%link%"><img class="logo" src="https://designshack.net/wp-content/uploads/larrybird-2.jpg"></img></a></li>';
+var HTMLgithub = '<li class="flex-item"><span class="orange-text">GitHub</span><a href="%link%"><img class="logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></img></a></li>';
 var HTMLlinkin = '<li class="flex-item"><span class="orange-text">LinkedIn</span><a href="%link%"><span class="white-text">%data%</span></a></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><a href="#"><span class="white-text">%data%</span></a></li>';
 
