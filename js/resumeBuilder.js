@@ -166,31 +166,36 @@ var projects = {
             "title": "mapping",
             "dates": "2017",
             "description": "use google map to map the neighberhood",
-            "images": ["images/map1.PNG", "images/map2.PNG"]
+            "images": ["images/map1.PNG", "images/map2.PNG"],
+            "links": "https://github.com/Eric0605/map" 
         },
         {
             "title": "fast running",
             "dates": "2017",
             "description": "to rewrite so it run at 60fps",
-            "images": ["images/pizza1.PNG", "images/pizza2.PNG"]
+            "images": ["images/pizza1.PNG", "images/pizza2.PNG"],
+            "links": "https://github.com/Eric0605/mobile-pizza" 
         },
         {
             "title": "classic arcade game clone",
             "dates": "2017",
             "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
-            "images": ["images/game1.PNG", "images/game2.PNG"]
+            "images": ["images/game1.PNG", "images/game2.PNG"],
+            "links": "https://github.com/Eric0605/Game" 
         },
         {
             "title": "online resume",
             "dates": "2017",
             "description": "build my resume by writing JavaScript that will combine my personal information with pre-written HTML and CSS templates to generate my resume.",
-            "images": ["images/resime.PNG", "images/resime2.PNG"]
+            "images": ["images/resime.PNG", "images/resime2.PNG"],
+            "links": "#" 
         },
         {
             "title": "Profile",
             "dates": "2017",
             "description": "develop a responsive website that will display images, descriptions and links to each of the portfolio projects",
-            "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"]
+            "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"],
+            "links": "https://github.com/Eric0605/profile"
         },
         {
             "title": "Animal Trading Cards Overview",
@@ -224,4 +229,3 @@ var projects = {
     }
 };
 projects.display();
-
