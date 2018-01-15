@@ -57,7 +57,10 @@ h6 {
   overflow: auto;
 }
 
-.education-entry,
+.education-entry{
+  padding: 0 5%;
+  margin-bottom: 0px;
+}
 .work-entry,
 .project-entry {
   padding: 0 5%;
