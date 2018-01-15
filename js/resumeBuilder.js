@@ -131,14 +131,14 @@ var work = {
         },
         {
             "employer": "volunteer",
-            "title": "food distributor",
+            "title": "food distributor (San Francisco Christian School)",
             "location": "San Francisco",
             "dates": "2016",
             "description": "to be in the church to distribute and translate if needed."
         },
         {
                 "employer": "volunteer",
-                "title": "tutor",
+                "title": "tutor (Mira Loma High School)",
                 "location": "Sacromento",
                 "dates": "2017",
                 "description": "to help the other student with math and technology if they need help."
