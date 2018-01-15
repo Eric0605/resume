@@ -161,35 +161,12 @@ var work = {
 };
 work.display();
 var projects = {
-    projects: [{
-            "title": "Memo",
-            "dates": "2017",
-            "description": "using canvas to create memo",
-            "images": ["images/memo1.jpg", "images/memo2.PNG"]
-        },
+    projects: [
         {
-            "title": "Animal Trading Cards Overview",
+            "title": "mapping",
             "dates": "2017",
-            "description": "Use what I have learned about CSS to convert a design prototype into a functional webpage",
-            "images": ["images/catclicker.PNG", "images/dogclicker.PNG"]
-        },
-        {
-            "title": "Profile",
-            "dates": "2017",
-            "description": "develop a responsive website that will display images, descriptions and links to each of the portfolio projects",
-            "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"]
-        },
-        {
-            "title": "online resume",
-            "dates": "2017",
-            "description": "build my resume by writing JavaScript that will combine my personal information with pre-written HTML and CSS templates to generate my resume.",
-            "images": ["images/resime.PNG", "images/resime2.PNG"]
-        },
-        {
-            "title": "classic arcade game clone",
-            "dates": "2017",
-            "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
-            "images": ["images/game1.PNG", "images/game2.PNG"]
+            "description": "use google map to map the neighberhood",
+            "images": ["images/map1.PNG", "images/map2.PNG"]
         },
         {
             "title": "fast running",
@@ -198,10 +175,34 @@ var projects = {
             "images": ["images/pizza1.PNG", "images/pizza2.PNG"]
         },
         {
-            "title": "mapping",
+            "title": "classic arcade game clone",
             "dates": "2017",
-            "description": "use google map to map the neighberhood",
-            "images": ["images/map1.PNG", "images/map2.PNG"]
+            "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
+            "images": ["images/game1.PNG", "images/game2.PNG"]
+        },
+        {
+            "title": "online resume",
+            "dates": "2017",
+            "description": "build my resume by writing JavaScript that will combine my personal information with pre-written HTML and CSS templates to generate my resume.",
+            "images": ["images/resime.PNG", "images/resime2.PNG"]
+        },
+        {
+            "title": "Profile",
+            "dates": "2017",
+            "description": "develop a responsive website that will display images, descriptions and links to each of the portfolio projects",
+            "images": ["images/profile1.PNG", "images/profile2.PNG", "images/profile3.PNG","images/profile4.PNG"]
+        },
+        {
+            "title": "Animal Trading Cards Overview",
+            "dates": "2017",
+            "description": "Use what I have learned about CSS to convert a design prototype into a functional webpage",
+            "images": ["images/catclicker.PNG", "images/dogclicker.PNG"]
+        },
+        {
+            "title": "Memo",
+            "dates": "2017",
+            "description": "using canvas to create memo",
+            "images": ["images/memo1.jpg", "images/memo2.PNG"]
         }
     ],
     display: function() {
