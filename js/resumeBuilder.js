@@ -69,7 +69,7 @@ var education = {
             url: "http://www.sanjuan.edu/miraloma"
         },
         {
-            name: "Kwun Tong Maryknoll College (High school)",
+            name: "Kwun Tong Maryknoll College (Middle School)",
             location: "Hong Kong",
             degree: "High school",
             majors: [],
