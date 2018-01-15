@@ -201,20 +201,26 @@ var projects = {
             "title": "Animal Trading Cards Overview",
             "dates": "2017",
             "description": "Use what I have learned about CSS to convert a design prototype into a functional webpage",
-            "images": ["images/catclicker.PNG", "images/dogclicker.PNG"]
+            "images": ["images/catclicker.PNG", "images/dogclicker.PNG"],
+            "links": "#" 
         },
         {
             "title": "Memo",
             "dates": "2017",
             "description": "using canvas to create memo",
-            "images": ["images/memo1.jpg", "images/memo2.PNG"]
+            "images": ["images/memo1.jpg", "images/memo2.PNG"],
+            "links": "#" 
         }
     ],
     display: function() {
         for (var x = 0; x < projects.projects.length; x++) {
             $("#projects").append(HTMLprojectStart);
-            var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[x].title);
             $(".project-entry:last").append(formattedTitle);
+            if (projects.projects[x].links !== undefined){
+                var formattedUrl = HTMLprojectTitle.replace("%link%", projects.projects[x].links);
+                var formattedTitle = formattedUrl.replace("%data%", projects.projects[x].title);
+                $(".project-entry:last").append(formattedTitle);
+            };
             var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[x].dates);
             $(".project-entry:last").append(formattedDates);
             var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[x].description);
