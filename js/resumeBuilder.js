@@ -205,7 +205,7 @@ var projects = {
             "dates": "2017",
             "description": "use what I have learned about CSS to convert a design prototype into a functional webpage",
             "images": ["images/catclicker.PNG", "images/dogclicker.PNG"],
-            "links": "#" 
+            "links": "https://github.com/Eric0605/animal" 
         },
         {
             "title": "Memo",
