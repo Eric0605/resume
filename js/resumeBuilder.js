@@ -124,7 +124,7 @@ education.display();
 var work = {
     jobs: [{
             "employer": "volunteer",
-            "title": "helper",
+            "title": "helper (Hong Kong Red Cross Princess Alexandra School)",
             "location": "Hong Kong",
             "dates": "2015",
             "description": "to help to teach some special needed student."
