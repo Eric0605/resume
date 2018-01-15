@@ -124,7 +124,7 @@ education.display();
 var work = {
     jobs: [{
             "employer": "volunteer",
-            "title": "Helper (Hong Kong Red Cross Princess Alexandra School)",
+            "title": "Volunteer Helper (Hong Kong Red Cross Princess Alexandra School)",
             "location": "Hong Kong",
             "dates": "2015",
             "description": "to help to teach some special needed student.",
@@ -132,7 +132,7 @@ var work = {
         },
         {
             "employer": "volunteer",
-            "title": "Food distributor (San Francisco Christian School)",
+            "title": "Volunteer Food Distributor (San Francisco Christian School)",
             "location": "San Francisco",
             "dates": "2016",
             "description": "to be in the church to distribute and translate if needed.",
@@ -140,7 +140,7 @@ var work = {
         },
         {
             "employer": "volunteer",
-            "title": "Tutor (Mira Loma High School)",
+            "title": "Volunteer Tutor (Mira Loma High School)",
             "location": "Sacromento",
             "dates": "2017",
             "description": "to help the other student with math and technology if they need help.",
