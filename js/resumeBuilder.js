@@ -203,7 +203,7 @@ var projects = {
         {
             "title": "Animal Trading Cards Overview",
             "dates": "2017",
-            "description": "Use what I have learned about CSS to convert a design prototype into a functional webpage",
+            "description": "use what I have learned about CSS to convert a design prototype into a functional webpage",
             "images": ["images/catclicker.PNG", "images/dogclicker.PNG"],
             "links": "#" 
         },
