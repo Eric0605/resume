@@ -151,7 +151,8 @@ var work = {
         for (var i = 0; i < work.jobs.length; i++) {
             $("#workExperience").append(HTMLworkStart);
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
-            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+            var formattedTitleUrl = HTMLworkTitle.replace("%link%", work.jobs[i].links);
+            var formattedTitle = formattedTitleUrl.replace("%data%", work.jobs[i].title);
             var formattedEmployerTitle = formattedEmployer + formattedTitle;
             $(".work-entry:last").append(formattedEmployerTitle);
             var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
