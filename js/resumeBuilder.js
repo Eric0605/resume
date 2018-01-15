@@ -80,14 +80,14 @@ var education = {
     onlineCourses: [{
             title: "Front-End Web Developer Nanodegree Program",
             school: "Udacity",
-            dates: "2017-2017",
+            dates: "2017",
             url: "http://udacity.com",
             img: "images/degree.PNG",
         },
         {
             title: "Web Design for Everybody (Basics of Web Development and Coding)",
             school: "Coursera (University of Michigan)",
-            dates: "2017-2017",
+            dates: "2017",
             url: "https://www.coursera.org/"
         }
     ],
