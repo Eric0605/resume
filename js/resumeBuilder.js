@@ -15,16 +15,6 @@ var bio = {
     display: function() {
         formattedName = HTMLheaderName.replace("%data%", bio.name);
         $("#header").prepend(formattedName);
-        formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-        $("#header").append(formattedRole);
-        formattedmobile = HTMLmobile.replace("%contact%", bio.contacts);
-        formattedmobile2 = formattedmobile.replace("%data%", bio.contacts.moblie);
-        $("#header").append(formattedmobile2);
-        $("#lets-connect").append(formattedmobile2);
-        formattedemail = HTMLemail.replace("%contact%", bio.contacts);
-        formattedemail2 = formattedemail.replace("%data%", bio.contacts.email);
-        $("#header").append(formattedemail2);
-        $("#lets-connect").append(formattedemail2);
         formattedgithub = HTMLgithub.replace("%contact%", bio.contacts);
         formattedgithub2 = formattedgithub.replace("%data%", bio.contacts.GitHub);
         formattedgithub3 = formattedgithub2.replace("%link%", bio.contacts.GitHub);
@@ -40,6 +30,16 @@ var bio = {
         formattedLinkin3 = formattedLinkin2.replace("%link%", bio.contacts.LinkedIn);
         $("#header").append(formattedLinkin3);
         $("#lets-connect").append(formattedLinkin3);
+        formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+        $("#header").append(formattedRole);
+        formattedmobile = HTMLmobile.replace("%contact%", bio.contacts);
+        formattedmobile2 = formattedmobile.replace("%data%", bio.contacts.moblie);
+        $("#header").append(formattedmobile2);
+        $("#lets-connect").append(formattedmobile2);
+        formattedemail = HTMLemail.replace("%contact%", bio.contacts);
+        formattedemail2 = formattedemail.replace("%data%", bio.contacts.email);
+        $("#header").append(formattedemail2);
+        $("#lets-connect").append(formattedemail2);
         formattedlocation = HTMLlocation.replace("%contact%", bio.contacts);
         formattedlocation2 = formattedlocation.replace("%data%", bio.contacts.location);
         $("#header").append(formattedlocation2);
