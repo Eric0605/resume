@@ -150,11 +150,9 @@ var work = {
     display: function() {
         for (var i = 0; i < work.jobs.length; i++) {
             $("#workExperience").append(HTMLworkStart);
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
             var formattedTitleUrl = HTMLworkTitle.replace("%link%", work.jobs[i].links);
             var formattedTitle = formattedTitleUrl.replace("%data%", work.jobs[i].title);
-            var formattedEmployerTitle = formattedEmployer + formattedTitle;
-            $(".work-entry:last").append(formattedEmployerTitle);
+            $(".work-entry:last").append(formattedTitle);
             var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
             $(".work-entry:last").append(formattedDates);
             var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
