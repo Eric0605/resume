@@ -166,21 +166,21 @@ work.display();
 var projects = {
     projects: [
         {
-            "title": "mapping",
+            "title": "Mapping",
             "dates": "2017",
             "description": "use google map to map the neighberhood",
             "images": ["images/map1.PNG", "images/map2.PNG"],
             "links": "https://github.com/Eric0605/map" 
         },
         {
-            "title": "fast running",
+            "title": "Fast Running",
             "dates": "2017",
             "description": "to rewrite so it runs at 60fps",
             "images": ["images/pizza1.PNG", "images/pizza2.PNG"],
             "links": "https://github.com/Eric0605/mobile-pizza" 
         },
         {
-            "title": "classic arcade game clone",
+            "title": "Classic Arcade Game Clone",
             "dates": "2017",
             "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
             "images": ["images/game1.PNG", "images/game2.PNG"],
