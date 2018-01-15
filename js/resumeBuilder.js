@@ -15,6 +15,8 @@ var bio = {
     display: function() {
         formattedName = HTMLheaderName.replace("%data%", bio.name);
         $("#header").prepend(formattedName);
+        formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+        $("#header").append(formattedRole);
         formattedgithub = HTMLgithub.replace("%contact%", bio.contacts);
         formattedgithub2 = formattedgithub.replace("%data%", bio.contacts.GitHub);
         formattedgithub3 = formattedgithub2.replace("%link%", bio.contacts.GitHub);
@@ -30,8 +32,6 @@ var bio = {
         formattedLinkin3 = formattedLinkin2.replace("%link%", bio.contacts.LinkedIn);
         $("#header").append(formattedLinkin3);
         $("#lets-connect").append(formattedLinkin3);
-        formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-        $("#header").append(formattedRole);
         formattedmobile = HTMLmobile.replace("%contact%", bio.contacts);
         formattedmobile2 = formattedmobile.replace("%data%", bio.contacts.moblie);
         $("#header").append(formattedmobile2);
