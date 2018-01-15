@@ -62,14 +62,14 @@ var bio = {
 bio.display();
 var education = {
     schools: [{
-            name: "Mira Loma High School",
+            name: "Mira Loma High School, Sacarmento,CA",
             location: "Sacarmento",
             majors: [],
             dates: "2016-2019",
             url: "http://www.sanjuan.edu/miraloma"
         },
         {
-            name: "Kwun Tong Maryknoll College (Middle School)",
+            name: "Kwun Tong Maryknoll College (Middle School), Hong Kong",
             location: "Hong Kong",
             degree: "High school",
             majors: [],
@@ -78,14 +78,14 @@ var education = {
         }
     ],
     onlineCourses: [{
-            title: "Front-End Web Developer Nanodegree Program",
+            title: "Front-End Web Developer Nanodegree Program, (Udacity online)",
             school: "Udacity",
             dates: "2017",
             url: "http://udacity.com",
             img: "images/degree.PNG",
         },
         {
-            title: "Web Design for Everybody (Basics of Web Development and Coding)",
+            title: "Web Design for Everybody (Basics of Web Development and Coding), (Coursera (University of Michigan) online)",
             school: "Coursera (University of Michigan)",
             dates: "2017",
             url: "https://www.coursera.org/"
@@ -100,17 +100,12 @@ var education = {
             $(".education-entry:last").append(formattedschoolName);
             var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[x].dates);
             $(".education-entry:last").append(formattedschoolDates);
-            var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[x].location);
-            $(".education-entry:last").append(formattedschoolLocation);
         }
-        $(".education-entry:last").append(HTMLonlineClasses);
         for (var y = 0; y < education.onlineCourses.length; y++) {
             $(".education-entry:last").css("color", "blue");
             var formattedonlineURL = HTMLonlineTitle.replace("%link%", education.onlineCourses[y].url);
             var formattedonlineTitle = formattedonlineURL.replace("%data%", education.onlineCourses[y].title);
             $(".education-entry:last").append(formattedonlineTitle);
-            var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[y].school);
-            $(".education-entry:last").append(formattedonlineSchool);
             var formattedonlineDates = HTMLschoolDates.replace("%data%", education.onlineCourses[y].dates);
             $(".education-entry:last").append(formattedonlineDates);
             if (education.onlineCourses[y].img !== undefined) {
