@@ -106,14 +106,13 @@ var education = {
         $(".education-entry:last").append(HTMLonlineClasses);
         for (var y = 0; y < education.onlineCourses.length; y++) {
             $(".education-entry:last").css("color", "blue");
-            var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[y].title);
+            var formattedonlineURL = HTMLonlineTitle.replace("%link%", education.onlineCourses[y].url);
+            var formattedonlineTitle = formattedonlineURL.replace("%data%", education.onlineCourses[y].title);
             $(".education-entry:last").append(formattedonlineTitle);
             var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[y].school);
             $(".education-entry:last").append(formattedonlineSchool);
             var formattedonlineDates = HTMLschoolDates.replace("%data%", education.onlineCourses[y].dates);
             $(".education-entry:last").append(formattedonlineDates);
-            var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[y].url);
-            $(".education-entry:last").append(formattedonlineURL);
             if (education.onlineCourses[y].img !== undefined) {
               var formattedonlineimg = HTMLonlinePic.replace("%data%", education.onlineCourses[y].img);
               $(".education-entry:last").append(formattedonlineimg);
