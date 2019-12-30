@@ -61,7 +61,15 @@ var bio = {
 };
 bio.display();
 var education = {
-    schools: [{
+    schools: [
+      {
+              name: "University of Wisconsin–Madison",
+              location: "Maison",
+              majors: ["CS"],
+              dates: "2019-2023",
+              url: "https://www.wisc.edu/"
+          },
+      {
             name: "Mira Loma High School, Sacarmento,CA",
             location: "Sacarmento",
             majors: [],
@@ -117,7 +125,16 @@ var education = {
 };
 education.display();
 var work = {
-    jobs: [{
+    jobs: [
+      {
+          "employer": "Intern",
+          "title": "IT business relationship management internship",
+          "location": "Sacramento",
+          "dates": "2019",
+          "description": "I worked in the IT business relationship department. I help improve and redesign the website page of the department. I also help organize the annual report for the problem issue the department facing.",
+          "links": "https://www.smud.org/en"
+      },
+      {
             "employer": "volunteer",
             "title": "Volunteer Helper (Hong Kong Red Cross Princess Alexandra School)",
             "location": "Hong Kong",
@@ -133,6 +150,7 @@ var work = {
             "description": "to be in the church to distribute and translate if needed.",
             "links": "http://www.sfchristianschool.org/"
         },
+
         {
             "employer": "volunteer",
             "title": "Volunteer Tutor (Mira Loma High School)",
@@ -163,28 +181,28 @@ var projects = {
             "dates": "2017",
             "description": "use google map to map the neighberhood",
             "images": ["images/map1.PNG", "images/map2.PNG"],
-            "links": "https://github.com/Eric0605/map" 
+            "links": "https://github.com/Eric0605/map"
         },
         {
             "title": "Fast Running",
             "dates": "2017",
             "description": "to rewrite so it runs at 60fps",
             "images": ["images/pizza1.PNG", "images/pizza2.PNG"],
-            "links": "https://github.com/Eric0605/mobile-pizza" 
+            "links": "https://github.com/Eric0605/mobile-pizza"
         },
         {
             "title": "Classic Arcade Game Clone",
             "dates": "2017",
             "description": "add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger",
             "images": ["images/game1.PNG", "images/game2.PNG"],
-            "links": "https://github.com/Eric0605/Game" 
+            "links": "https://github.com/Eric0605/Game"
         },
         {
             "title": "Online Resume",
             "dates": "2017",
             "description": "build my resume by writing JavaScript that combines my personal information with pre-written HTML and CSS templates to generate my resume",
             "images": ["images/resime.PNG", "images/resime2.PNG"],
-            "links": "#" 
+            "links": "#"
         },
         {
             "title": "Profile",
@@ -198,14 +216,14 @@ var projects = {
             "dates": "2017",
             "description": "use what I have learned about CSS to convert a design prototype into a functional webpage",
             "images": ["images/catclicker.PNG", "images/dogclicker.PNG"],
-            "links": "https://github.com/Eric0605/animal" 
+            "links": "https://github.com/Eric0605/animal"
         },
         {
             "title": "Memo",
             "dates": "2017",
             "description": "using canvas to create memo",
             "images": ["images/memo1.jpg", "images/memo2.PNG"],
-            "links": "https://github.com/Eric0605/Memo" 
+            "links": "https://github.com/Eric0605/Memo"
         }
     ],
     display: function() {
