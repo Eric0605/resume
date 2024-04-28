@@ -143,6 +143,11 @@ a {
 #skills-h3 {
   color: #f5ae23;
 }
+
+#language-h3 {
+  color: #f5ae23;
+}
+
 .school{
   margin-top:30px
 }
@@ -166,6 +171,16 @@ a {
 }
 .flex-skill{
   margin:0px;
+  display: inline-block;
+}
+
+.flex-language{
+  margin:0px;
+  display: inline-block;
+}
+
+.skillsLanguageClass{
+  width: 40%;
   display: inline-block;
 }
 
@@ -254,19 +269,30 @@ span {
 
 #map {
   display: block;
-  height: 100%;
+  height: 400px;
   margin: 0 5%;
 }
 
 #mapDiv {
-  height: 400px;
+  height: 50px;
   width: 100%;
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
+gmp-map {
+  height: 100%;
+}
+
+@media only screen and (min-width: 800px) {
   #skills-h3,
+  #language-h3,
   .biopic {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skillsLanguageClass {
     display: block;
   }
 }
