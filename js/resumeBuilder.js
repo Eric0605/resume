@@ -5,10 +5,10 @@ var bio = {
         moblie: "(415)533-1247",
         email: "erictthk@gmail.com",
         GitHub: "https://github.com/Eric0605",
-        location: "523 Pine Street, Apt 1005, Seattle, WA, 98101",
+        location: "651 La Grande Drive, Apt 3, Sunnyvale, CA, 94087",
         LinkedIn: "https://www.linkedin.com/in/erictthk/"
     },
-    welcomeMessage: "Hello, I am Eric working in AWS AppStream2.0 . I am an US citizen looking for opptunity in CS feild",
+    welcomeMessage: "Hello, I am Eric and I worked in AWS AppStream2.0 Compute team. I am an US citizen looking for opptunity in CS feild",
     skills: ["Java ", "Python", "HTML,CSS, Javascript", "AWS"],
     launages: ["Cantonese", "English", "Mandarin", "Japanese"],
     biopic: "images/me.jpg",
@@ -127,9 +127,17 @@ var work = {
         "employer": "Amazon Web Service AppStream2.0 Control Plane Compute team",
         "title": "SDE 1 at AWS AppStream2.0 Control Plane Compute team",
         "location": "Seattle",
-        "dates": "2022 - current",
+        "dates": "2022 - 2024",
         "description": "I worked in the Compute team. Compute team takes care of the backend of the AppStream2.0 from customer API call until the Ec2 instance regester request",
         "links": "https://aws.amazon.com/pm/appstream2/?gclid=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE&trk=6dbac706-dadd-4b1f-afa5-85954bacbfb9&sc_channel=ps&ef_id=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE:G:s&s_kwcid=AL!4422!3!651751060242!e!!g!!aws%20appstream%202.0!19852662218!145019220417"
+    },
+    {
+        "employer": "Intern",
+        "title": "Infosys Instep Program",
+        "location": "Remote",
+        "dates": "2021",
+        "description": "HTML, CSS, JS on Responsive design, Reactjs and jQuery, Python interaction, Background Music and Image editing",
+        "links": "https://www.infosys.com/instep.html"
     },
     {
         "employer": "Intern",
@@ -274,7 +282,11 @@ var projects = {
                 var formattedUrl = HTMLprojectTitle.replace("%link%", projects.projects[x].links);
                 var formattedTitle = formattedUrl.replace("%data%", projects.projects[x].title);
                 $(".project-entry:last").append(formattedTitle);
-            };
+            } else {
+                var formattedProjectTitle = HTMLprojectTitleNoLink.replace("%link%", projects.projects[x].links);
+                var formattedTitle = formattedProjectTitle.replace("%data%", projects.projects[x].title);
+                $(".project-entry:last").append(formattedTitle);
+            }
             var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[x].dates);
             $(".project-entry:last").append(formattedDates);
             var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[x].description);
