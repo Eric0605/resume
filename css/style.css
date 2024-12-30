@@ -14,7 +14,7 @@ body{
   width: auto;
 }
 img{
-  width: 45%;
+  width: 450px;
   height: 300px;
 }
 div{
@@ -263,7 +263,7 @@ span {
     display: none;
   }
   img{
-    width: 100%;
+    display: none;
   }
 }
 

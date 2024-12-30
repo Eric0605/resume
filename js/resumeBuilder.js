@@ -291,10 +291,18 @@ var projects = {
             $(".project-entry:last").append(formattedDates);
             var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[x].description);
             $(".project-entry:last").append(formattedDescription);
+            var saveedImaged = "";
             if (projects.projects[x].images !== undefined) {
                 for (var z = 0; z < projects.projects[x].images.length; z++) {
                     var formattedImages = HTMLprojectImage.replace("%data%", projects.projects[x].images[z]);
-                    $(".project-entry:last").append(formattedImages);
+                    if(saveedImaged.length == 0){
+                        saveedImaged = formattedImages;
+                    } else {
+                        saveedImaged += formattedImages;
+                        var imageDiv = HTMLprojectImageList.replace("%data%", saveedImaged);
+                        $(".project-entry:last").append(imageDiv);
+                        saveedImaged = "";
+                    }
                 }
             }
         }
