@@ -20,20 +20,18 @@ var bio = {
         var logos = "";
         logos += HTMLLogo.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.GitHub).replace("%link%", bio.contacts.GitHub).replace("%imageSource%", "images/github-128.png");
         logos += HTMLLogo.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.LinkedIn).replace("%link%", bio.contacts.LinkedIn).replace("%imageSource%", "images/linkedin-128.png");
-        var logoDiv = HTMLLogoList.replace("%data%", logos);        
-        $("#header").append(logoDiv);
-        $("#lets-connect").append(logoDiv);
-        $("#header").append("<hr>");
-        $("#lets-connect").append("<hr>");
-        formattedmobile = HTMLmobile.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.moblie);
-        $("#header").append(formattedmobile);
-        $("#lets-connect").append(formattedmobile);
-        formattedemail = HTMLemail.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.email);
-        $("#header").append(formattedemail);
-        $("#lets-connect").append(formattedemail);
-        formattedlocation = HTMLlocation.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.location);
-        $("#header").append(formattedlocation);
-        $("#lets-connect").append(formattedlocation);
+        var logoDiv = HTMLLogoList.replace("%data%", logos);
+        logoDiv += "<hr>";
+        var contact = "";
+        contact += HTMLcontactGeneric.replace("%contact%", "mobile").replace("%data%", bio.contacts.moblie);
+        contact += HTMLcontactGeneric.replace("%contact%", "email").replace("%data%", bio.contacts.email);
+        contact += HTMLcontactGeneric.replace("%contact%", "location").replace("%data%", bio.contacts.location);
+        contact += "<hr>";
+        let contactTableElement = [logoDiv, contact];
+        for(let element of contactTableElement){
+            $("#header").append(element);
+            $("#lets-connect").append(element);
+        }
         formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         $("#header").append(formattedwelcomeMsg);
         if (bio.biopic !== null) {

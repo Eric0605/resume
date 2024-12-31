@@ -1,17 +1,14 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span>';
 
+var HTMLContactList = '<div class="contact-list">%data%</div>';
 var HTMLcontactGeneric =
-  '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile =
-  '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail =
-  '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
+    '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
+
 var HTMLLogoList = '<div class="logo-list">%data%</div>';
 var HTMLLogo =
-  '<li class="flex-logo"><a href="%link%"><img class="logo" src="%imageSource%"></a></li>';
-var HTMLlocation =
-  '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
+    '<li class="flex-logo"><a href="%link%"><img class="logo" src="%imageSource%"></a></li>';
+
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -19,14 +16,14 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 var HTMLskillslaunage = '<div id="skillsLanguage"></div>';
 
 var HTMLskillsStart =
-  '<div class="skillsLanguageClass"><h3 id="skills-h3">Programming Language:</h3><ul id="skills" class="flex-column"></ul></div>';
+    '<div class="skillsLanguageClass"><h3 id="skills-h3">Programming Language:</h3><ul id="skills" class="flex-column"></ul></div>';
 var HTMLskills =
-  '<li class="flex-skill"><span class="white-text">%data%</span></li>';
+    '<li class="flex-skill"><span class="white-text">%data%</span></li>';
 
 var HTMLlanguageStart =
-  '<div class="skillsLanguageClass"><h3 id="language-h3">Language:</h3><ul id="language" class="flex-column"></ul></div>';
+    '<div class="skillsLanguageClass"><h3 id="language-h3">Language:</h3><ul id="language" class="flex-column"></ul></div>';
 var HTMLlanguage =
-  '<li class="flex-language"><span class="white-text">%data%</span></li>';
+    '<li class="flex-language"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div>%data%</div>';
