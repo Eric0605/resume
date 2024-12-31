@@ -90,7 +90,8 @@ a {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry,
+.volunteer-entry {
   padding: 0 5%;
   margin-bottom: 15px;
 }
