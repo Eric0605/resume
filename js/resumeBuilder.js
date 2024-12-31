@@ -8,7 +8,7 @@ var bio = {
         location: "651 La Grande Drive, Apt 3, Sunnyvale, CA, 94087",
         LinkedIn: "https://www.linkedin.com/in/erictthk/"
     },
-    welcomeMessage: "Hello, I am Eric and I worked in AWS AppStream2.0 Compute team. I am an US citizen looking for opptunity in CS feild",
+    welcomeMessage: "Hi, I am a software engineer look for opportunity. I mainly code in Java but I am also capable of using Python and Ruby. I am passionate and result driven ",
     skills: ["Java ", "Python", "HTML,CSS, Javascript", "AWS"],
     launages: ["Cantonese", "English", "Mandarin", "Japanese"],
     biopic: "images/me.jpg",

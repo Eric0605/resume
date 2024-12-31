@@ -1,70 +1,8 @@
-.logo{
-  width: 35px;
-  height: 35px;
-  padding-bottom: 0;
-}
-#blue-text{
-  color: rgb(0,191,255);
-}
-.flex-logo{
-  display: inline-block;
-  margin: 0;
-}
-body{
+/* General Styles */
+body {
   width: auto;
-}
-img{
-  width: 450px;
-  height: 300px;
-}
-div{
-  color: black;
-}
-ul{
-  color: black;
-}
-li{
-  width: auto;
-  margin: 20px;
-}
-a{
-  display: inline-block;
-}
-p{
-  font-size: 20px;
-}
-h1{
-  width: 50%;
-}
-h2{
-  font-size: 15px;
-}
-h3{
-  padding: 0;
-}
-h4,
-h5,
-.flex-item{
-  display: inline-block;
-}
-h6 {
-  padding: 0;
-  margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-.clear-fix {
-  overflow: auto;
-}
-
-.education-entry{
-  padding: 0 5%;
-  margin-bottom: 0px;
-}
-.work-entry,
-.project-entry {
-  padding: 0 5%;
-  margin-bottom: 15px;
+  color: black;
 }
 
 h1 {
@@ -87,6 +25,7 @@ h3 {
   font-size: 20px;
   color: #000;
   line-height: 22px;
+  padding: 0;
 }
 
 h4 {
@@ -95,28 +34,14 @@ h4 {
   color: #4a4a4a;
   line-height: 17px;
 }
+
 h5 {
   padding: 10px 5%;
-
 }
 
-
-.date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
-  margin-right: 10px;
-}
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
-
+h6 {
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -125,11 +50,59 @@ p {
   line-height: 12px;
 }
 
+ul {
+  list-style-type: none;
+  color: black;
+  padding: 0;
+}
+
+li {
+  width: auto;
+  margin: 20px;
+}
+
 a {
   color: #1199c3;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+/* Utility Classes */
+.logo {
+  width: 35px;
+  height: 35px;
+  padding-bottom: 0;
+}
+
+#blue-text {
+  color: rgb(0, 191, 255);
+}
+
+.flex-logo {
+  display: inline-block;
+  margin: 0;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+  margin-bottom: 15px;
+}
+
+.date-text,
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+  margin-right: 10px;
 }
 
 .welcome-message {
@@ -140,17 +113,15 @@ a {
   display: block;
 }
 
-#skills-h3 {
-  color: #f5ae23;
-}
-
+#skills-h3,
 #language-h3 {
   color: #f5ae23;
 }
 
-.school{
-  margin-top:30px
+.school {
+  margin-top: 30px;
 }
+
 .orange {
   background-color: #f5ae23;
 }
@@ -169,32 +140,23 @@ a {
   padding-bottom: 20px;
   clear: both;
 }
-.flex-skill{
-  margin:0px;
-  display: inline-block;
-}
-
-.flex-language{
-  margin:0px;
-  display: inline-block;
-}
-
-.skillsLanguageClass{
-  width: 40%;
-  display: inline-block;
-}
 
 .dark-gray {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
+.flex-skill,
+.flex-language {
+  margin: 0;
+  display: inline-block;
+}
+
+.skillsLanguageClass {
+  width: 40%;
+  display: inline-block;
 }
 
 .flex-box {
-  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -213,10 +175,6 @@ a {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .biopic {
   float: left;
   padding: 10px;
@@ -225,6 +183,8 @@ ul {
 }
 
 img {
+  width: 450px;
+  height: 300px;
   padding: 10px;
 }
 
@@ -235,36 +195,9 @@ span {
 #lets-connect {
   text-align: center;
 }
-#role{
+
+#role {
   color: orange;
-}
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-  img{
-    display: none;
-  }
 }
 
 #map {
@@ -279,8 +212,33 @@ span {
   padding-bottom: 5%;
 }
 
-gmp-map {
-  height: 100%;
+/* Header Styles */
+#header {
+  background-color: #484848;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic,
+  .welcome-message,
+  img {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 800px) {
