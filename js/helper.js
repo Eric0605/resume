@@ -15,15 +15,10 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillslaunage = '<div id="skillsLanguage"></div>';
 
-var HTMLskillsStart =
-    '<div class="skillsLanguageClass"><h3 id="skills-h3">Programming Language:</h3><ul id="skills" class="flex-column"></ul></div>';
-var HTMLskills =
-    '<li class="flex-skill"><span class="white-text">%data%</span></li>';
-
-var HTMLlanguageStart =
-    '<div class="skillsLanguageClass"><h3 id="language-h3">Language:</h3><ul id="language" class="flex-column"></ul></div>';
-var HTMLlanguage =
-    '<li class="flex-language"><span class="white-text">%data%</span></li>';
+var HTMLTalentStart =
+    '<div class="skillsLanguageClass"><h3 id="skills-h3">%talents%:</h3><ul id="%id%" class="flex-column"></ul></div>';
+var HTMLTalent =
+    '<li class="flex-talent"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div>%data%</div>';

@@ -8,7 +8,7 @@ var bio = {
         location: "651 La Grande Drive, Apt 3, Sunnyvale, CA, 94087",
         LinkedIn: "https://www.linkedin.com/in/erictthk/"
     },
-    welcomeMessage: "Hi, I am a software engineer look for opportunity. I mainly code in Java but I am also capable of using Python and Ruby. I am passionate and result driven ",
+    welcomeMessage: "Hi, I am a software engineer look for opportunity. I have two years of experience in the my careers. I mainly code in Java but I am also capable of using Python and Ruby. I am passionate, result driven and willing to learn. This is my resume page building from one of my past project.",
     skills: ["Java ", "Python", "HTML,CSS, Javascript", "AWS"],
     launages: ["Cantonese", "English", "Mandarin", "Japanese"],
     biopic: "images/me.jpg",
@@ -43,16 +43,16 @@ var bio = {
         }
 
         if (bio.skills.length > 0) {
-            $("#skillsLanguage").append(HTMLskillsStart);
+            $("#skillsLanguage").append(HTMLTalentStart.replace("%talents%", "Programming Language").replace("%id%", "skills"));
             for (var i = 0; i < bio.skills.length; i++) {
-                var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+                var formattedSkill = HTMLTalent.replace("%data%", bio.skills[i]);
                 $("#skills").append(formattedSkill);
             }
         }
         if (bio.launages.length > 0) {
-            $("#skillsLanguage").append(HTMLlanguageStart);
+            $("#skillsLanguage").append(HTMLTalentStart.replace("%talents%", "Language").replace("%id%", "language"));
             for (var i = 0; i < bio.launages.length; i++) {
-                var formattedLaunage = HTMLlanguage.replace("%data%", bio.launages[i]);
+                var formattedLaunage = HTMLTalent.replace("%data%", bio.launages[i]);
                 $("#language").append(formattedLaunage);
             }
         }
@@ -203,27 +203,27 @@ var projects = {
         {
             "title": "AWS Appstream Region Auto Build Project",
             "dates": "2024",
-            "description": "centailize multiple resource delcartion in different package so only 1 source of truth is present"
+            "description": "After the lanuching of us-gov-east-1, AppStream team realized the long process requeired to update each of the package. Multiple edited on the same data is required on each region build, as a result, the team decided to centailize multiple resource delcartion into one package. This create one source of truth and decrease the worklord for each newer region launch. It also decreases the chance which new region data is missing after the region is launch."
         },
         {
             "title": "Customer Resource limit monitor",
             "dates": "2023",
-            "description": "create alarm and slack notification on specific Ec2 instance for a specific customer to guaramtee the resource avaiblity in the contract "
+            "description": "Halliburton is onboarded to sa-southeast-1 after the region is launch. As part of the contract, AppStream promised Halliburton that capacity mentioned in the contact will be always provided. As AppStream also shared compute capacity accross customers. I created alarm on number of currently used instance, total availble instance and their ratio. Data is gathered from the Ec2 Reserved Instance and Total instance push to CloudWatch. Alarm is set up on CloudWatch and alert message is sent to Slack using Amazon Chatbot. Slack notification is sent to the team when the threshod is brenched"
         },
         {
             "title": "Internal Tool Enhancement for support team",
             "dates": "2023",
-            "description": "follow up action item after previous enginner left, makeing backend resource required in all region and code to be competiable with the changes"
+            "description": "AppStream has numbers of attrition in the middle of the year. As a result, AppStream internal data display console is left in a broken state due to package conflict. I followed up on the action item after previous enginner left, makeing backend code to be competiable with the dependecy changes. Intern joining is able to use the tool successfully as a result"
         },
         {
             "title": "AWS Appstream US-Gov-East-1 Region Launch",
             "dates": "2023",
-            "description": "appstream 2.0 is now aviable in us-gov-east-1 region, I am responsible in part of the launch"
+            "description": "Appstream 2.0 is now aviable in us-gov-east-1 region, the region provides customer with cleanrance a higher security product. As a result, this project requires us citizen engineer in the team and I am the only one in the compute team at the time. I owned the project implementation and resource creation. The deadline is tight and requires lott of time to proform. In the end, AppStream is able to deliver the new region to the customers as promised"
         },
         {
             "title": "AWS Appstream Fraud automation script and resource termination",
             "dates": "2022",
-            "description": "detect custome frad status with AWS Fraud team api and terminate customer resource if needed"
+            "description": "As AppStream grows, it becomes a traget for attacker and bleed the organziation money. In order to stop the bleed team, AppStream team worked with the Amazon Fraud team to investigate and marked attack. Script is created to detect custome fraud status with AWS Fraud team API and terminate customer resource if needed"
         },
         {
             "title": "Fast Running",
