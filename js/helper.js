@@ -13,10 +13,10 @@ var HTMLLogo =
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillslaunage = '<div id="skillsLanguage"></div>';
+var HTMLskillslaunage = '<div id="talents"></div>';
 
 var HTMLTalentStart =
-    '<div class="skillsLanguageClass"><h3 id="skills-h3">%talents%:</h3><ul id="%id%" class="flex-column"></ul></div>';
+    '<div class="talentsClass"><h3 id="talents-h3">%talents%:</h3><ul id="%id%" class="flex-column"></ul></div>';
 var HTMLTalent =
     '<li class="flex-talent"><span class="white-text">%data%</span></li>';
 

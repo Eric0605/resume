@@ -113,11 +113,9 @@ a {
   display: block;
 }
 
-#skills-h3,
-#language-h3 {
+#talents-h3 {
   color: #f5ae23;
   text-align: center;
-  border: #000;
 }
 
 .orange-text {
@@ -153,11 +151,6 @@ a {
   margin: 0;
   display: inline-block;
   text-align: center;
-}
-
-.skillsLanguageClass {
-  width: 40%;
-  display: inline-block;
 }
 
 .flex-box {
@@ -242,14 +235,13 @@ span {
 
 @media only screen and (min-width: 800px) {
   #skills-h3,
-  #language-h3,
   .biopic {
     display: block;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .skillsLanguageClass {
+  .talentsClass {
     display: block;
   }
 }

@@ -43,14 +43,14 @@ var bio = {
         }
 
         if (bio.skills.length > 0) {
-            $("#skillsLanguage").append(HTMLTalentStart.replace("%talents%", "Programming Language").replace("%id%", "skills"));
+            $("#talents").append(HTMLTalentStart.replace("%talents%", "Programming Language").replace("%id%", "skills"));
             for (var i = 0; i < bio.skills.length; i++) {
                 var formattedSkill = HTMLTalent.replace("%data%", bio.skills[i]);
                 $("#skills").append(formattedSkill);
             }
         }
         if (bio.launages.length > 0) {
-            $("#skillsLanguage").append(HTMLTalentStart.replace("%talents%", "Language").replace("%id%", "language"));
+            $("#talents").append(HTMLTalentStart.replace("%talents%", "Language").replace("%id%", "language"));
             for (var i = 0; i < bio.launages.length; i++) {
                 var formattedLaunage = HTMLTalent.replace("%data%", bio.launages[i]);
                 $("#language").append(formattedLaunage);
