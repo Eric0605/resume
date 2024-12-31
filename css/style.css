@@ -101,7 +101,6 @@ a {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  float: left;
   margin-right: 10px;
 }
 
@@ -114,7 +113,8 @@ a {
 }
 
 #skills-h3,
-#language-h3 {
+#language-h3,
+.orange-text {
   color: #f5ae23;
 }
 
@@ -124,10 +124,6 @@ a {
 
 .orange {
   background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
 }
 
 .white-text {
@@ -146,7 +142,8 @@ a {
 }
 
 .flex-skill,
-.flex-language {
+.flex-language,
+.flex-item {
   margin: 0;
   display: inline-block;
 }
@@ -176,9 +173,10 @@ a {
 }
 
 .biopic {
-  float: left;
+  float: right;
   padding: 10px;
   width: 200px;
+  height: 300px;
   display: none;
 }
 

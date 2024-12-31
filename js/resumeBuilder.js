@@ -1,6 +1,6 @@
 var bio = {
     name: "Eric Tsang",
-    role: "SDE 1",
+    role: "Software Development Engineer 1",
     contacts: {
         moblie: "(415)533-1247",
         email: "erictthk@gmail.com",
@@ -17,28 +17,23 @@ var bio = {
         $("#header").prepend(formattedName);
         formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         $("#header").append(formattedRole);
-        formattedgithub = HTMLgithub.replace("%contact%", bio.contacts);
-        formattedgithub2 = formattedgithub.replace("%data%", bio.contacts.GitHub);
-        formattedgithub3 = formattedgithub2.replace("%link%", bio.contacts.GitHub);
-        $("#header").append(formattedgithub3);
-        $("#lets-connect").append(formattedgithub3);
-        formattedLinkin = HTMLlinkin.replace("%contact%", bio.contacts);
-        formattedLinkin2 = formattedLinkin.replace("%data%", bio.contacts.LinkedIn);
-        formattedLinkin3 = formattedLinkin2.replace("%link%", bio.contacts.LinkedIn);
-        $("#header").append(formattedLinkin3);
-        $("#lets-connect").append(formattedLinkin3);
-        formattedmobile = HTMLmobile.replace("%contact%", bio.contacts);
-        formattedmobile2 = formattedmobile.replace("%data%", bio.contacts.moblie);
-        $("#header").append(formattedmobile2);
-        $("#lets-connect").append(formattedmobile2);
-        formattedemail = HTMLemail.replace("%contact%", bio.contacts);
-        formattedemail2 = formattedemail.replace("%data%", bio.contacts.email);
-        $("#header").append(formattedemail2);
-        $("#lets-connect").append(formattedemail2);
-        formattedlocation = HTMLlocation.replace("%contact%", bio.contacts);
-        formattedlocation2 = formattedlocation.replace("%data%", bio.contacts.location);
-        $("#header").append(formattedlocation2);
-        $("#lets-connect").append(formattedlocation2);
+        var logos = "";
+        logos += HTMLLogo.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.GitHub).replace("%link%", bio.contacts.GitHub).replace("%imageSource%", "images/github-128.png");
+        logos += HTMLLogo.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.LinkedIn).replace("%link%", bio.contacts.LinkedIn).replace("%imageSource%", "images/linkedin-128.png");
+        var logoDiv = HTMLLogoList.replace("%data%", logos);        
+        $("#header").append(logoDiv);
+        $("#lets-connect").append(logoDiv);
+        $("#header").append("<hr>");
+        $("#lets-connect").append("<hr>");
+        formattedmobile = HTMLmobile.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.moblie);
+        $("#header").append(formattedmobile);
+        $("#lets-connect").append(formattedmobile);
+        formattedemail = HTMLemail.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.email);
+        $("#header").append(formattedemail);
+        $("#lets-connect").append(formattedemail);
+        formattedlocation = HTMLlocation.replace("%contact%", bio.contacts).replace("%data%", bio.contacts.location);
+        $("#header").append(formattedlocation);
+        $("#lets-connect").append(formattedlocation);
         formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         $("#header").append(formattedwelcomeMsg);
         if (bio.biopic !== null) {
