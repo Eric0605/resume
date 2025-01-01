@@ -228,7 +228,9 @@ span {
   }
   .biopic,
   .welcome-message,
-  img {
+  img,
+  #mapDiv,
+  #map {
     display: none;
   }
 }
