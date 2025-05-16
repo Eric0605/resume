@@ -64,7 +64,14 @@
   <script src="js/resumeBuilder.js"></script>
   <script>
 
-    
+    function changeLanguage() {
+      const googleCombo = document.querySelector('.goog-te-combo');
+      const langSelect = document.getElementById('langSelect');
+      if (googleCombo) {
+        googleCombo.value = langSelect.value;
+        googleCombo.dispatchEvent(new Event('change'));
+      }
+    }
 
     if (document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';

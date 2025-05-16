@@ -302,12 +302,3 @@ var projects = {
     }
 };
 projects.display();
-
-function changeLanguage() {
-    const googleCombo = document.querySelector('.goog-te-combo');
-    const langSelect = document.getElementById('langSelect');
-    if (googleCombo) {
-        googleCombo.value = langSelect.value;
-        googleCombo.dispatchEvent(new Event('change'));
-    }
-}
