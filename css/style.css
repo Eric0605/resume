@@ -215,6 +215,11 @@ span {
   background-color: #484848;
 }
 
+#langSelect {
+  margin-right: auto;
+  padding: 5px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
   #lets-connect {
@@ -226,6 +231,7 @@ span {
   #lets-connect {
     margin-top: 10%;
   }
+
   .biopic,
   .welcome-message,
   img,
@@ -236,6 +242,7 @@ span {
 }
 
 @media only screen and (min-width: 800px) {
+
   #skills-h3,
   .biopic {
     display: block;

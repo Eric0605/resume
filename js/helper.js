@@ -1,4 +1,4 @@
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLheaderName = '<h1 id="name" class="notranslate">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span>';
 
 var HTMLContactList = '<div class="contact-list">%data%</div>';

@@ -12,7 +12,7 @@ var bio = {
     skills: ["Java ", "Python", "HTML,CSS, Javascript", "AWS"],
     launages: ["Cantonese", "English", "Mandarin", "Japanese"],
     biopic: "images/me.jpg",
-    display: function() {
+    display: function () {
         formattedName = HTMLheaderName.replace("%data%", bio.name);
         $("#header").prepend(formattedName);
         formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -28,7 +28,7 @@ var bio = {
         contact += HTMLcontactGeneric.replace("%contact%", "location").replace("%data%", bio.contacts.location);
         contact += "<hr>";
         let contactTableElement = [logoDiv, contact];
-        for(let element of contactTableElement){
+        for (let element of contactTableElement) {
             $("#header").append(element);
             $("#lets-connect").append(element);
         }
@@ -61,35 +61,35 @@ var bio = {
 bio.display();
 var education = {
     schools: [{
-            name: "University of Wisconsin–Madison",
-            location: "Maison",
-            majors: ["CS"],
-            dates: "2019-2023",
-            url: "https://www.wisc.edu/"
-        },
-        {
-            name: "Mira Loma High School, Sacarmento,CA",
-            location: "Sacarmento",
-            majors: [],
-            dates: "2016-2019",
-            url: "http://www.sanjuan.edu/miraloma"
-        }
+        name: "University of Wisconsin–Madison",
+        location: "Maison",
+        majors: ["CS"],
+        dates: "2019-2023",
+        url: "https://www.wisc.edu/"
+    },
+    {
+        name: "Mira Loma High School, Sacarmento,CA",
+        location: "Sacarmento",
+        majors: [],
+        dates: "2016-2019",
+        url: "http://www.sanjuan.edu/miraloma"
+    }
     ],
     onlineCourses: [{
-            title: "Front-End Web Developer Nanodegree Program, Udacity, Online)",
-            school: "Udacity",
-            dates: "2017",
-            url: "http://udacity.com",
-            img: "images/degree.PNG",
-        },
-        {
-            title: "Web Design for Everybody (Basics of Web Development and Coding), Coursera (University of Michigan), Online",
-            school: "Coursera (University of Michigan)",
-            dates: "2017",
-            url: "https://www.coursera.org/"
-        }
+        title: "Front-End Web Developer Nanodegree Program, Udacity, Online)",
+        school: "Udacity",
+        dates: "2017",
+        url: "http://udacity.com",
+        img: "images/degree.PNG",
+    },
+    {
+        title: "Web Design for Everybody (Basics of Web Development and Coding), Coursera (University of Michigan), Online",
+        school: "Coursera (University of Michigan)",
+        dates: "2017",
+        url: "https://www.coursera.org/"
+    }
     ],
-    display: function() {
+    display: function () {
         for (var x = 0; x < education.schools.length; x++) {
             $(".education-entry:last").css("color", "blue");
             $("#education").append(HTMLschoolStart);
@@ -116,32 +116,32 @@ var education = {
 education.display();
 var work = {
     jobs: [
-    {
-        "employer": "Amazon Web Service AppStream2.0 Control Plane Compute team",
-        "title": "SDE 1 at AWS AppStream2.0 Control Plane Compute team",
-        "location": "Seattle",
-        "dates": "2022 - 2024",
-        "description": "I worked in the Compute team. Compute team takes care of the backend of the AppStream2.0 from customer API call until the Ec2 instance regester request",
-        "links": "https://aws.amazon.com/pm/appstream2/?gclid=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE&trk=6dbac706-dadd-4b1f-afa5-85954bacbfb9&sc_channel=ps&ef_id=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE:G:s&s_kwcid=AL!4422!3!651751060242!e!!g!!aws%20appstream%202.0!19852662218!145019220417"
-    },
-    {
-        "employer": "Intern",
-        "title": "Infosys Instep Program",
-        "location": "Remote",
-        "dates": "2021",
-        "description": "HTML, CSS, JS on Responsive design, Reactjs and jQuery, Python interaction, Background Music and Image editing",
-        "links": "https://www.infosys.com/instep.html"
-    },
-    {
-        "employer": "Intern",
-        "title": "IT business relationship management internship",
-        "location": "Sacramento",
-        "dates": "2019",
-        "description": "I worked in the IT business relationship department. I help improve and redesign the website page of the department. I also help organize the annual report for the problem issue the department facing.",
-        "links": "https://www.smud.org/en"
-    }
+        {
+            "employer": "Amazon Web Service AppStream2.0 Control Plane Compute team",
+            "title": "SDE 1 at AWS AppStream2.0 Control Plane Compute team",
+            "location": "Seattle",
+            "dates": "2022 - 2024",
+            "description": "I worked in the Compute team. Compute team takes care of the backend of the AppStream2.0 from customer API call until the Ec2 instance regester request",
+            "links": "https://aws.amazon.com/pm/appstream2/?gclid=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE&trk=6dbac706-dadd-4b1f-afa5-85954bacbfb9&sc_channel=ps&ef_id=CjwKCAjw57exBhAsEiwAaIxaZnWKK97eGANo5iJfHIDWhuW1_KwPpZ2EyVDKIibTTuX8YD5S9qou9RoCVv8QAvD_BwE:G:s&s_kwcid=AL!4422!3!651751060242!e!!g!!aws%20appstream%202.0!19852662218!145019220417"
+        },
+        {
+            "employer": "Intern",
+            "title": "Infosys Instep Program",
+            "location": "Remote",
+            "dates": "2021",
+            "description": "HTML, CSS, JS on Responsive design, Reactjs and jQuery, Python interaction, Background Music and Image editing",
+            "links": "https://www.infosys.com/instep.html"
+        },
+        {
+            "employer": "Intern",
+            "title": "IT business relationship management internship",
+            "location": "Sacramento",
+            "dates": "2019",
+            "description": "I worked in the IT business relationship department. I help improve and redesign the website page of the department. I also help organize the annual report for the problem issue the department facing.",
+            "links": "https://www.smud.org/en"
+        }
     ],
-    display: function() {
+    display: function () {
         for (var i = 0; i < work.jobs.length; i++) {
             $("#workExperience").append(HTMLworkStart);
             var formattedTitleUrl = HTMLworkTitle.replace("%link%", work.jobs[i].links);
@@ -158,32 +158,32 @@ work.display();
 
 var volunteer = {
     jobs: [{
-            "employer": "volunteer",
-            "title": "Volunteer Helper (Hong Kong Red Cross Princess Alexandra School)",
-            "location": "Hong Kong",
-            "dates": "2015",
-            "description": "to help to teach some special needed student.",
-            "links": "http://www.pas.edu.hk/"
-        },
-        {
-            "employer": "volunteer",
-            "title": "Volunteer Food Distributor (San Francisco Christian School)",
-            "location": "San Francisco",
-            "dates": "2016",
-            "description": "to be in the church to distribute and translate if needed.",
-            "links": "http://www.sfchristianschool.org/"
-        },
+        "employer": "volunteer",
+        "title": "Volunteer Helper (Hong Kong Red Cross Princess Alexandra School)",
+        "location": "Hong Kong",
+        "dates": "2015",
+        "description": "to help to teach some special needed student.",
+        "links": "http://www.pas.edu.hk/"
+    },
+    {
+        "employer": "volunteer",
+        "title": "Volunteer Food Distributor (San Francisco Christian School)",
+        "location": "San Francisco",
+        "dates": "2016",
+        "description": "to be in the church to distribute and translate if needed.",
+        "links": "http://www.sfchristianschool.org/"
+    },
 
-        {
-            "employer": "volunteer",
-            "title": "Volunteer Tutor (Mira Loma High School)",
-            "location": "Sacromento",
-            "dates": "2017",
-            "description": "to help the other student with math and technology if they need help.",
-            "links": "http://www.sanjuan.edu/miraloma"
-        }
+    {
+        "employer": "volunteer",
+        "title": "Volunteer Tutor (Mira Loma High School)",
+        "location": "Sacromento",
+        "dates": "2017",
+        "description": "to help the other student with math and technology if they need help.",
+        "links": "http://www.sanjuan.edu/miraloma"
+    }
     ],
-    display: function() {
+    display: function () {
         for (var i = 0; i < volunteer.jobs.length; i++) {
             $("#volunteer").append(HTMLvolunteerStart);
             var formattedTitleUrl = HTMLvolunteerTitle.replace("%link%", volunteer.jobs[i].links);
@@ -268,7 +268,7 @@ var projects = {
             "links": "https://github.com/Eric0605/Memo"
         }
     ],
-    display: function() {
+    display: function () {
         for (var x = 0; x < projects.projects.length; x++) {
             $("#projects").append(HTMLprojectStart);
             if (projects.projects[x].links !== undefined) {
@@ -288,7 +288,7 @@ var projects = {
             if (projects.projects[x].images !== undefined) {
                 for (var z = 0; z < projects.projects[x].images.length; z++) {
                     var formattedImages = HTMLprojectImage.replace("%data%", projects.projects[x].images[z]);
-                    if(saveedImaged.length == 0){
+                    if (saveedImaged.length == 0) {
                         saveedImaged = formattedImages;
                     } else {
                         saveedImaged += formattedImages;
@@ -302,3 +302,12 @@ var projects = {
     }
 };
 projects.display();
+
+function changeLanguage() {
+    const googleCombo = document.querySelector('.goog-te-combo');
+    const langSelect = document.getElementById('langSelect');
+    if (googleCombo) {
+        googleCombo.value = langSelect.value;
+        googleCombo.dispatchEvent(new Event('change'));
+    }
+}
